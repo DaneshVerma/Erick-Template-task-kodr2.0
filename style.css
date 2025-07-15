@@ -468,6 +468,33 @@ main .section8 .wrapper .box span p {
   text-transform: uppercase;
   font-size: 1rem;
 }
+main .section9 {
+  padding: 2rem;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+main .section9 h1 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+main .section9 h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .section9 button {
+  font-size: 1rem;
+  word-spacing: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  border: none;
+}
 
 @media (min-width: 768px) {
   main .section1,
@@ -708,5 +735,18 @@ main .section8 .wrapper .box span p {
   }
   main .section8 .wrapper .container .box h2 {
     font-size: 4rem;
+  }
+  main .section9 {
+    gap: unset;
+    padding: 4rem 2rem;
+  }
+  main .section9 h1 {
+    font-size: 14rem;
+  }
+  main .section9 h2 {
+    font-size: 5rem;
+  }
+  main .section9 button {
+    font-size: 1rem;
   }
 }
