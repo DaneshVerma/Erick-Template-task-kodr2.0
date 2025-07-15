@@ -356,9 +356,117 @@ main .section6 .container .blocks .brand {
 }
 main .section6 .container hr {
   width: 100%;
-  background-color: black;
+  background-color: rgba(107, 106, 106, 0.452);
   padding-top: 1px;
   border: none;
+}
+main .section7 {
+  width: 100%;
+}
+main .section7 hr {
+  width: 100%;
+  background-color: rgba(107, 106, 106, 0.452);
+  padding-top: 1px;
+  border: none;
+}
+main .section7 .container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section7 .container .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .container .top .left h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .section7 .container .top .right p {
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+main .section7 .container .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .container .bottom .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .container .bottom .card h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+main .section7 .container .bottom .card .image {
+  width: 100%;
+}
+main .section7 .container .bottom .card .image img {
+  width: 100%;
+}
+main .section7 .container .bottom .card span {
+  display: flex;
+  justify-content: space-between;
+}
+main .section7 .container .bottom .card span p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.712);
+}
+main .section7 .container .bottom .card span .icon i {
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 1rem;
+}
+main .section7 .container .bottom .card p {
+  color: gray;
+  font-size: 1.2rem;
+  word-spacing: 0.45rem;
+}
+main .section8 {
+  width: 100%;
+  padding: 2rem;
+}
+main .section8 .wrapper .box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section8 .wrapper .box h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+main .section8 .wrapper .box p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+main .section8 .wrapper .box span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .section8 .wrapper .box span .arrow-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: black;
+}
+main .section8 .wrapper .box span p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -538,5 +646,67 @@ main .section6 .container hr {
   main .section6 .wrapper .container .blocks div .brand {
     font-size: 2.2rem;
     font-weight: 300;
+  }
+  main .section7 {
+    padding: 2rem 4rem;
+  }
+  main .section7 .container {
+    width: 100%;
+  }
+  main .section7 .container .top {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .section7 .container .top .left {
+    width: 50%;
+  }
+  main .section7 .container .top .left h1 {
+    font-size: 8rem;
+  }
+  main .section7 .container .top .right {
+    width: 50%;
+  }
+  main .section7 .container .top .right p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    word-spacing: 0.5rem;
+  }
+  main .section7 .container .bottom {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main .section7 .container .bottom .card span p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  main .section7 .container .bottom .card p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.5rem;
+  }
+  main .section8 {
+    padding: 2rem 4rem;
+  }
+  main .section8 .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  main .section8 .wrapper .empty {
+    width: 50%;
+  }
+  main .section8 .wrapper .container {
+    width: 50%;
+  }
+  main .section8 .wrapper .container .box {
+    gap: 0.5rem;
+  }
+  main .section8 .wrapper .container .box p {
+    font-size: 0.8rem;
+  }
+  main .section8 .wrapper .container .box h2 {
+    font-size: 4rem;
   }
 }
