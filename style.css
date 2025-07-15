@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 html,
@@ -313,6 +316,50 @@ main .section5 .container .second .textbox span p {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
+main .section6 {
+  padding: 2rem;
+  width: 100%;
+}
+main .section6 h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+}
+main .section6 .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section6 .container .blocks {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section6 .container .blocks .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section6 .container .blocks p {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main .section6 .container .blocks .brand {
+  font-size: 1.5rem;
+  font-size: 600;
+}
+main .section6 .container hr {
+  width: 100%;
+  background-color: black;
+  padding-top: 1px;
+  border: none;
+}
 
 @media (min-width: 768px) {
   main .section1,
@@ -432,7 +479,7 @@ main .section5 .container .second .textbox span p {
   main .section5 .container .first,
   main .section5 .container .second {
     flex-direction: row;
-    gap: 2rem;
+    justify-content: space-between;
   }
   main .section5 .container .first .image1,
   main .section5 .container .first .image2,
@@ -458,5 +505,38 @@ main .section5 .container .second .textbox span p {
   }
   main .section5 .container .second {
     flex-direction: row-reverse;
+  }
+  main .section6 h1 {
+    text-align: right;
+  }
+  main .section6 .wrapper {
+    display: flex;
+    width: 100%;
+  }
+  main .section6 .wrapper .empty {
+    width: 35%;
+  }
+  main .section6 .wrapper .container {
+    width: 65%;
+  }
+  main .section6 .wrapper .container .blocks {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .section6 .wrapper .container .blocks .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .section6 .wrapper .container .blocks div .year,
+  main .section6 .wrapper .container .blocks div .branding {
+    font-size: 0.8rem;
+  }
+  main .section6 .wrapper .container .blocks div .brand {
+    font-size: 2.2rem;
+    font-weight: 300;
   }
 }
